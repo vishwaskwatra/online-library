@@ -33,11 +33,17 @@ Follow these instructions to get the project running on your local machine.
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/vishwaskwatra/online-library
+   ```
 2. **Navigate to the Project Directory**
+    ```bash
    cd online-library
+   ```
 3. **Install Dependencies using npm**
+    ```bash
     npm install
+    ```
 4. **Run the application using npm**
+    ```bash
     npm run dev
     ```
 5. **To view the functionality of the project**
