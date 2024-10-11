@@ -39,5 +39,6 @@ Follow these instructions to get the project running on your local machine.
     npm install
 4. **Run the application using npm**
     npm run dev
+    ```
 5. **To view the functionality of the project**
     Open your browser and go to http://localhost:5173 to view the application.
