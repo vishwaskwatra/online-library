@@ -7,7 +7,6 @@ This is an **Online Library System** built using **React** and **Redux**, with r
 - **Browse Books**: View a list of all available books.
 - **Add Books**: Fill a form to add a new book to the library.
 - **View Book Details**: Click on any book to view its detailed information.
-- **Category Filtering**: Browse books based on their categories (e.g., Fiction, Non-Fiction).
 - **Search Functionality**: Search for books by title or author.
   
 ## Technologies Used
