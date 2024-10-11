@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   books: [],
-  currentId: 1, // Start the ID from 1
+  currentId: 1,
 };
 
 const booksSlice = createSlice({
@@ -12,10 +12,10 @@ const booksSlice = createSlice({
     addBook: (state, action) => {
       const newBook = {
         ...action.payload,
-        id: String(state.currentId).padStart(5, '0'), // Generate a 5-digit ID
+        id: String(state.currentId).padStart(5, '0'),
       };
       state.books.push(newBook);
-      state.currentId += 1; // Increment the ID
+      state.currentId += 1;
     },
   },
 });

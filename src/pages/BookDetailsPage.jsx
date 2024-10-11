@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 const BookDetailsPage = () => {
   const { id } = useParams();
   const book = useSelector((state) =>
-    state.books.books.find((book) => book.id === id) // No conversion needed, ID is a string
+    state.books.books.find((book) => book.id === id)
   );
 
   if (!book) return <div className="text-center text-2xl font-bold mt-20">Book not found</div>;
@@ -15,6 +15,7 @@ const BookDetailsPage = () => {
         <h1 className="text-4xl font-bold text-blue-600 mb-4">{book.title}</h1>
         <p className="text-xl font-medium text-gray-700 mb-4">Author: <span className="font-semibold">{book.author}</span></p>
         <p className="text-gray-600 mb-6">{book.description}</p>
+        <p className="text-m font-medium text-gray-700 mb-4">Category: {book.category}</p>
         <p className="text-lg font-semibold text-gray-800 mb-6">Rating: <span className="text-yellow-500">{book.rating}/5</span></p>
         
         <Link

@@ -13,12 +13,13 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/books" element={<BrowseBooksPage />} />
-        <Route path="/books/details/:id" element={<BookDetailsPage />} />
-        <Route path="/add-book" element={<AddBookPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/books" element={<BrowseBooksPage />} />
+    <Route path="/books/:category" element={<BrowseBooksPage />} /> 
+    <Route path="/books/details/:id" element={<BookDetailsPage />} />
+    <Route path="/add-book" element={<AddBookPage />} />
+    <Route path="*" element={<NotFoundPage />} />
+  </Routes>
     </Router>
   );
 }
